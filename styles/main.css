@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(../font/css/satoshi.css);
 
 :root {
     --f-main-header: "Bebas Neue", sans-serif;
@@ -12,4 +13,10 @@
 
 body {
     background-color: #0a0a0a;
+}
+
+h1 {
+    font-family: 'Satoshi-Light';
+    font-size: 5rem;
+    color: white;
 }
