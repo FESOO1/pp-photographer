@@ -1,5 +1,5 @@
+@import url(../styles/satoshi.css);
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url(../font/css/satoshi.css);
 
 :root {
     --f-main-header: "Bebas Neue", sans-serif;
@@ -15,8 +15,64 @@ body {
     background-color: #0a0a0a;
 }
 
-h1 {
-    font-family: 'Satoshi-Light';
-    font-size: 5rem;
+/* NAVBAR */
+
+nav {
+    position: fixed;
+    top: 30px;
+    left: calc(50% - 48%);
+    width: 96%;
+}
+
+/* NAVBAR-TOP */
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo-itself {
+    font-family: var(--f-main-header);
     color: white;
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 100;
+}
+
+/* LINKS */
+
+.links {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    font-family: 'Satoshi-Light';
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.link::before {
+    content: '';
+    width: 0%;
+    height: 0.5px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    transition: width 300ms;
+}
+
+.link:hover::before {
+    width: 100%;
 }
