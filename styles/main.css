@@ -555,17 +555,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 15px;
 }
 
 .footer-contact {
     width: 85%;
-    background-color: rgba(22, 22, 22);
+    background-color: rgba(19, 19, 19);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 30px;
+    padding: 30px;
     border-radius: 2rem;
     row-gap: 30px;
 }
@@ -576,7 +576,6 @@ footer {
     text-decoration: none;
     font-size: 10rem;
     font-weight: 200;
-    line-height: 130px;
     transition: color 400ms;
 }
 
@@ -602,5 +601,44 @@ footer {
 }
 
 .footer-contact-link:hover .footer-contact-link-svg {
+    color: rgb(150, 150, 150);
+}
+
+.footer-links {
+    width: 80%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Satoshi-Light';
+}
+
+.footer-links-left {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-links-left > a {
+    text-decoration: none;
+    color: white;
+    transition: color 400ms;
+    font-size: 0.9rem;
+}
+
+.footer-links-left > a:hover {
+    color: rgb(150, 150, 150);
+}
+
+.footer-links-right {
+    color: rgb(150, 150, 150);
+}
+
+.footer-links-right-link {
+    text-decoration: none;
+    color: white;
+    transition: color 400ms;
+}
+
+.footer-links-right-link:hover {
     color: rgb(150, 150, 150);
 }
