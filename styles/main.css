@@ -203,13 +203,13 @@ body {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(35, 35, 35, 0.5);
+    background-color: rgba(35, 35, 35, 0.2);
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 1.3rem;
     z-index: -1;
-    transition: scale 300ms;
+    transition: scale 400ms;
 }
 
 .video:hover::before {
@@ -240,7 +240,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     font-family: 'Satoshi-Light';
-    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9) 95%);
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 95%);
     border-radius: 0.93rem;
 }
 
@@ -311,4 +311,12 @@ body {
 
 .video:hover .video-link-btn-text {
     opacity: 1;
+}
+
+
+
+.videos-show-all-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
