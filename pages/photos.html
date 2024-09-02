@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/body.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/photos.css">
 </head>
 <body>
 
@@ -39,6 +40,54 @@
         </div>
     </nav>
 
-    
+    <!-- CONTENT -->
+
+    <main>
+
+        <!-- MAIN HEADER TEXT -->
+         
+        <div class="main-header">
+            <h1 class="main-header-text">ALL PHOTOS</h1>
+        </div>
+
+        <!-- ALL PHOTOS THEMSELVES -->
+
+        <div class="photos">
+            <div class="photos-controller">
+                <button type="button" id="fullViewBtn" class="photos-controller-button active-photos-button">Full</button>
+                <button type="button" id="gridViewBtn" class="photos-controller-button">Grid</button>
+            </div>
+            <div class="photos-container">
+                <a href="" class="photo">
+                    <div class="photo-image">
+                        <img class="photo-image-itself" src="../assets/images/home-section-photography-one.avif" alt="">
+                    </div>
+                    <div class="photo-text-link">
+                        <div class="photo-link">
+                            <div class="photo-link-btn">
+                                <span class="photo-link-btn-text">View</span>
+                                <svg class="photo-link-btn-svg" width="18" height="18" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="arrowRightTopIconTitle" stroke="#ffffff" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g id="SVGRepo_iconCarrier"> <title id="arrowRightTopIconTitle">Arrow Right Top</title> <path d="M19 13V5h-8"/> <path stroke-linecap="round" d="M19 5l-1 1"/> <path d="M18 6L5 19"/> </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="photo-text">
+                            <div class="photo-text-left">
+                                <h3 class="photo-text-left-title">Love Story</h3>
+                                <p class="photo-text-left-type">Event Photography</p>
+                            </div>
+                            <span class="photo-text-year">2024</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/photos.js"></script>
 </body>
 </html>
