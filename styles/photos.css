@@ -148,3 +148,9 @@ main {
 .photo-link {
     display: none;
 }
+
+/* PHOTO JS TO GRID */
+
+.photos-container-js {
+    border: 5px solid red;
+}

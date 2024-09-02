@@ -29,15 +29,13 @@ footer {
 }
 
 .footer-contact-lets-talk-text {
-    width: 525px;
-    height: 115px;
     color: white;
     font-family: var(--f-main-header);
     text-decoration: none;
     font-size: 10rem;
     font-weight: 200;
     transition: color 400ms;
-    line-height: 130px;
+    line-height: 1cap;
 }
 
 .footer-contact-lets-talk-text:hover {
