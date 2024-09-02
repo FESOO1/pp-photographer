@@ -196,7 +196,6 @@ main {
     border-radius: 1.4rem;
     position: relative;
     background-color: rgba(35, 35, 35, 0.3);
-    padding: 8px;
     cursor: pointer;
 }
 
@@ -298,6 +297,10 @@ main {
 
 /* PHOTOGRAPHY STATES */
 
+.photos-container-js .photo:hover {
+    padding: 8px;
+}
+
 .photos-container-js .photo:hover .photo-link-btn-svg {
     transform: rotateZ(0);
     opacity: 1;
@@ -305,8 +308,4 @@ main {
 
 .photos-container-js .photo:hover .photo-link-btn-text {
     opacity: 1;
-}
-
-.photos-container-js .photo:hover .photo-image-itself {
-    scale: 1.2;
 }
