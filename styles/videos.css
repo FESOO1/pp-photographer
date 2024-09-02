@@ -50,7 +50,7 @@ main {
 
 /* PHOTOS */
 
-.photos {
+.videos {
     margin-top: 60px;
     position: relative;
     display: flex;
@@ -60,7 +60,7 @@ main {
 
 /* PHOTOS CONTROLLER */
 
-.photos-controller {
+.videos-controller {
     top: 80px;
     position: sticky;
     width: 250px;
@@ -74,7 +74,7 @@ main {
     z-index: 15;
 }
 
-.photos-controller-button {
+.videos-controller-button {
     background-color: transparent;
     border: 0;
     font-size: 1.2rem;
@@ -86,13 +86,13 @@ main {
     transition: background-color 300ms;
 }
 
-.active-photos-button {
+.active-videos-button {
     background-color: rgb(35, 35, 35);
 }
 
 /* PHOTOS CONTAINER */
 
-.photos-container {
+.videos-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ main {
     row-gap: 250px;
 }
 
-.photo {
+.videos-itself {
     width: 90%;
     height: 90vh;
     position: sticky;
@@ -116,7 +116,7 @@ main {
 
 /* PHOTO INNER */
 
-.photo-image {
+.video-itself-video {
     top: 0;
     left: 0;
     width: 100%;
@@ -125,18 +125,18 @@ main {
     z-index: -1;
 }
 
-.photo-image-itself {
+.video-itself-video-itself {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.photo-text-link {
+.video-text-link {
     width: 100%;
     height: 100%;
 }
 
-.photo-text {
+.video-text {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -145,14 +145,14 @@ main {
     row-gap: 10px;
 }
 
-.photo-text-left {
+.video-text-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
 }
 
-.photo-text-left-title {
+.video-text-left-title {
     color: white;
     font-family: var(--f-main-header);
     font-weight: 200;
@@ -161,27 +161,27 @@ main {
     line-height: 70px;
 }
 
-.photo-text-left-type {
+.video-text-left-type {
     color: white;
     font-family: 'Satoshi-Light';
     font-size: 1.6rem;
     filter: drop-shadow(0 5px 3px black);
 }
 
-.photo-text-year {
+.video-text-year {
     color: white;
     font-family: 'Satoshi-Light';
     font-size: 1.3rem;
     filter: drop-shadow(0 5px 3px black);
 }
 
-.photo-link {
+.video-link {
     display: none;
 }
 
-/* PHOTO JS TO GRID */
+/* VIDEO JS TO GRID */
 
-.photos-container-js {
+.videos-container-js {
     padding-inline: 100px;
     padding-bottom: 100px;
     display: grid;
@@ -189,7 +189,7 @@ main {
     gap: 30px;
 }
 
-.photos-container-js .photo {
+.videos-container-js .videos-itself {
     width: 100%;
     text-decoration: none;
     height: 400px;
@@ -199,7 +199,7 @@ main {
     overflow: visible;
 }
 
-.photos-container-js .photo::before {
+.videos-container-js .videos-itself::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -212,7 +212,7 @@ main {
     transition: scale 400ms;
 }
 
-.photos-container-js .photo-image {
+.videos-container-js .video-itself-video {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
@@ -220,7 +220,7 @@ main {
     position: static;
 }
 
-.photos-container-js .photo-image-itself {
+.videos-container-js .video-itself-video-itself {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -228,7 +228,7 @@ main {
     transition: scale 400ms;
 }
 
-.photos-container-js .photo-text-link {
+.videos-container-js .video-text-link {
     top: 0;
     left: 0;
     position: absolute;
@@ -242,12 +242,12 @@ main {
     border-radius: 0.93rem;
 }
 
-.photos-container-js .photo-link {
+.videos-container-js .video-link {
     display: flex;
     justify-content: flex-end;
 }
 
-.photos-container-js .photo-link-btn {
+.videos-container-js .video-link-btn {
     border: 0;
     background-color: transparent;
     display: flex;
@@ -256,7 +256,7 @@ main {
     font-family: 'Satoshi-Light';
 }
 
-.photos-container-js .photo-link-btn-text {
+.videos-container-js .video-link-btn-text {
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
@@ -265,13 +265,13 @@ main {
     transition: opacity 400ms;
 }
 
-.photos-container-js .photo-link-btn-svg {
+.videos-container-js .video-link-btn-svg {
     opacity: 0;
     transform: rotateZ(45deg);
     transition: opacity 400ms, transform 400ms;
 }
 
-.photos-container-js .photo-text {
+.videos-container-js .video-text {
     height: auto;
     display: flex;
     flex-direction: row;
@@ -279,14 +279,14 @@ main {
     align-items: flex-end;
 }
 
-.photos-container-js .photo-text-left {
+.videos-container-js .video-text-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 6px;
 }
 
-.photos-container-js .photo-text-left-title {
+.videos-container-js .video-text-left-title {
     color: white;
     font-size: 1.7rem;
     font-weight: 400;
@@ -295,30 +295,30 @@ main {
     font-family: 'Satoshi-Light';
 }
 
-.photos-container-js .photo-text-left-type {
+.videos-container-js .video-text-left-type {
     color: white;
     font-size: 1.2rem;
     filter: none;
 }
 
-.photos-container-js .photo-text-year {
+.videos-container-js .video-text-year {
     color: white;
     font-size: 1.3rem;
     font-weight: 500;
     filter: none;
 }
 
-/* PHOTOGRAPHY STATES */
+/* VIDEO STATES */
 
-.photos-container-js .photo:hover::before {
+.videos-container-js .videos-itself:hover::before {
     scale: 1.022 1.035;
 }
 
-.photos-container-js .photo:hover .photo-link-btn-svg {
+.videos-container-js .videos-itself:hover .video-link-btn-svg {
     transform: rotateZ(0);
     opacity: 1;
 }
 
-.photos-container-js .photo:hover .photo-link-btn-text {
+.videos-container-js .videos-itself:hover .video-link-btn-text {
     opacity: 1;
 }
