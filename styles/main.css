@@ -558,25 +558,36 @@ footer {
     padding-bottom: 15px;
 }
 
+/* FOOTER CONTACT */
+
 .footer-contact {
-    width: 85%;
+    width: 87%;
     background-color: rgba(19, 19, 19);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 50px;
     border-radius: 2rem;
-    row-gap: 30px;
+    row-gap: 40px;
+}
+
+.footer-contact-divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-contact-lets-talk-text {
+    width: 525px;
+    height: 115px;
     color: white;
     font-family: var(--f-main-header);
     text-decoration: none;
     font-size: 10rem;
     font-weight: 200;
     transition: color 400ms;
+    line-height: 130px;
 }
 
 .footer-contact-lets-talk-text:hover {
@@ -584,28 +595,26 @@ footer {
 }
 
 .footer-contact-links {
+    width: 525px;
     display: flex;
-    column-gap: 15px;
+    justify-content: space-between;
 }
 
 .footer-contact-link {
     text-decoration: none;
-}
-
-.footer-contact-link-svg {
-    --svg-size: 25px;
     color: white;
-    width: var(--svg-size);
-    height: var(--svg-size);
+    font-family: 'Satoshi-Light';
     transition: color 400ms;
 }
 
-.footer-contact-link:hover .footer-contact-link-svg {
-    color: rgb(150, 150, 150);
+.footer-contact-link:hover {
+    color: rgb(150,150,150);
 }
 
+/* FOOTER LINKS */
+
 .footer-links {
-    width: 80%;
+    width: 82%;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
