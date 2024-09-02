@@ -1,3 +1,31 @@
+/* CUSTOM CURSOR */
+
+.view-cursor {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Satoshi-Light';
+    color: white;
+    column-gap: 2px;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    mix-blend-mode: difference;
+    transition: transform 100ms, opacity 200ms;
+}
+
+.view-cursor-text {
+    font-size: 1.4rem;
+}
+
+.view-cursor-svg {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+}
+
 /* MAIN */
 
 main {
@@ -70,7 +98,7 @@ main {
     align-items: center;
     width: 100%;
     margin-top: 40px;
-    padding-bottom: 5vh;
+    padding-bottom: 80px;
     row-gap: 250px;
 }
 
@@ -83,6 +111,7 @@ main {
     border-radius: 1rem;
     overflow: hidden;
     transition: 400ms;
+    cursor: none;
     /* border: 10px solid rgba(35, 35, 35, 0.3); */
 }
 
@@ -169,6 +198,7 @@ main {
     position: relative;
     background-color: rgba(35, 35, 35, 0.3);
     padding: 8px;
+    cursor: pointer;
 }
 
 .photos-container-js .photo-image {
