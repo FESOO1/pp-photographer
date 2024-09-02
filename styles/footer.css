@@ -29,6 +29,10 @@ footer {
 }
 
 .footer-contact-lets-talk-text {
+    width: 525px;
+    height: 130px;
+    display: flex;
+    align-items: center;
     color: white;
     font-family: var(--f-main-header);
     text-decoration: none;
