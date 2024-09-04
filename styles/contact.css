@@ -1,0 +1,146 @@
+/* MAIN HEADER */
+
+.main-header {
+    padding: 15px;
+    height: 430px;
+    position: relative;
+}
+
+.main-header-video {
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.main-header-video::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.662);
+}
+
+.main-header-video-itself {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-header-text-itself {
+    font-family: var(--f-main-header);
+    color: white;
+    font-size: 9.5rem;
+    font-weight: 200;
+}
+
+/* CONTACT */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    padding-bottom: 150px;
+    row-gap: 70px;
+}
+
+.contact-text {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-subheader {
+    color: white;
+    font-family: var(--f-main-header);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/* CONTACT WAYS */
+
+.contact-ways {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-medias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.email-and-phone {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.direct-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    column-gap: 5px;
+    position: relative;
+}
+
+.direct-btn::before {
+    content: '';
+    width: 0%;
+    height: 0.5px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    transition: width 400ms;
+}
+
+.direct-btn:hover::before {
+    width: 100%;
+}
+
+.direct-btn:hover .direct-btn-svg {
+    transform: rotateZ(45deg);
+    transition: transform 400ms;
+}
+
+.direct-btn-text {
+    color: white;
+    font-family: 'Satoshi-Light';
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.direct-btn-svg {
+    --size: 22px;
+    width: var(--size);
+    height: var(--size);
+    stroke: white;
+    transition: transform 600ms;
+}
+
+.other-platforms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(18, 18, 18);
+    background-color: red;
+}
+
+.other-platforms-link {
+    background-color: rgb(10,10,10);
+}
