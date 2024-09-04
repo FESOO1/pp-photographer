@@ -120,8 +120,8 @@
 /* MORE PHOTOS */
 
 .more-photos {
-    padding-block: 80px;
-    margin-top: 150px;
+    padding-block: 150px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     row-gap: 80px;
@@ -257,4 +257,48 @@
 
 .photography-itself:hover .photography-image-itself {
     scale: 1.2;
+}
+
+/* SHOW ALL BUTTON */
+
+.photography-show-all-button {
+    display: flex;
+    justify-content: center;
+}
+
+.direct-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    column-gap: 5px;
+    position: relative;
+}
+
+.direct-btn::before {
+    content: '';
+    width: 0%;
+    height: 0.5px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    transition: width 400ms;
+}
+
+.direct-btn:hover::before {
+    width: 100%;
+}
+
+.direct-btn:hover .direct-btn-svg {
+    transform: rotateZ(45deg);
+    transition: transform 400ms;
+}
+
+.direct-btn-text {
+    color: white;
+    font-family: 'Satoshi-Light';
+}
+
+.direct-btn-svg {
+    stroke: white;
+    transition: transform 600ms;
 }
