@@ -251,3 +251,33 @@ label {
 .send-button:hover {
     background-color: rgb(35,35,35);
 }
+
+/* CONTACT FORM ERROR OR SUCCESS TEXT */
+
+.form-text {
+    position: fixed;
+    color: white;
+    font-family: 'Satoshi-Light';
+    left: 50%;
+    bottom: -100px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    column-gap: 6px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255,255,255,0.03);
+    transform: translate(-50%, -50%);
+    transition: bottom 400ms;
+}
+
+.form-text-svg {
+    color: orangered;
+    width: 22px;
+    height: 22px;
+}
+
+.form-text-itself {
+    transform: translateY(1px);
+    text-transform: uppercase;
+}
