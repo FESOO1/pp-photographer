@@ -63,3 +63,49 @@
 .inner-unordered-list > li {
     padding-left: 10px;
 }
+
+/* MEDIA QEURIES */
+
+@media (max-width: 1200px) {
+    .privacy-policy-subheader {
+        font-size: 2.8rem;
+    }
+    .smaller-than-subheader,
+    .list-element {
+        font-size: 1.2rem;
+    }
+    .paragraph {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .privacy-policy-inner {
+        width: 100%;
+    }
+    .privacy-policy {
+        padding-inline: 25px;
+    }
+    .privacy-policy-subheader {
+        font-size: 2.5rem;
+    }
+    .smaller-than-subheader,
+    .list-element {
+        font-size: 1.1rem;
+    }
+    .paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .privacy-policy {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .privacy-policy {
+        padding-inline: 15px;
+    }
+}

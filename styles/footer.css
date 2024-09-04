@@ -29,8 +29,7 @@ footer {
 }
 
 .footer-contact-lets-talk-text {
-    width: 525px;
-    height: 130px;
+    padding-block: 10px;
     display: flex;
     align-items: center;
     color: white;
@@ -38,8 +37,8 @@ footer {
     text-decoration: none;
     font-size: 10rem;
     font-weight: 200;
-    transition: color 400ms;
     line-height: 1cap;
+    transition: color 400ms;
 }
 
 .footer-contact-lets-talk-text:hover {
@@ -76,7 +75,8 @@ footer {
 
 .footer-links-left {
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer-links-left > a {
@@ -102,4 +102,87 @@ footer {
 
 .footer-links-right-link:hover {
     color: rgb(150, 150, 150);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .footer-links {
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .footer-links-left > a {
+        font-size: 1rem;
+    }
+    footer {
+        padding-bottom: 20px;
+    }
+    .footer-contact-lets-talk-text {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .footer-contact-links {
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        width: 95%;
+        padding-inline: 50px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        padding-top: 20px;
+    }
+    .footer-contact-lets-talk-text {
+        font-size: 6.5rem;
+        padding-block: 5px;
+    }
+    .footer-contact {
+        row-gap: 25px;
+    }
+    .footer-contact {
+        padding-block: 40px 30px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-contact-lets-talk-text {
+        font-size: 4.5rem;
+    }
+    .footer-contact {
+        width: 100%;
+    }
+    footer {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links-left {
+        justify-content: center;
+    }
+    .footer-contact-links {
+        width: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-contact-lets-talk-text {
+        font-size: 3.5rem;
+    }
+    .footer-contact {
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer-contact-lets-talk-text {
+        font-size: 3rem;
+    }
+    footer {
+        padding-inline: 15px;
+    }
 }
