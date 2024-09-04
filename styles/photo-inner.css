@@ -1,0 +1,35 @@
+/* PHOTO */
+
+.photo {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-inner {
+    width: 75%;
+}
+
+.photo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.photo-info-h1 {
+    font-family: var(--f-main-header);
+    color: white;
+    font-size: 9.5rem;
+    font-weight: 200;
+}
+
+.paragraph {
+    width: 700px;
+    color: #868686;
+    font-family: 'Satoshi-Light';
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 28px;
+}
