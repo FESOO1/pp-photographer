@@ -1,0 +1,65 @@
+/* PRIVACY POLICY */
+
+.privacy-policy {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.privacy-policy-inner {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: 'Satoshi-Light';
+}
+
+.privacy-policy-subheader {
+    color: white;
+    font-family: var(--f-main-header);
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.privacy-policy-itself {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.privacy-policy-itself-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.smaller-than-subheader {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+}
+
+.bold {
+    font-weight: 700;
+    font-family: 'Satoshi-Bold';
+}
+
+.list-element {
+    font-size: 1.3rem;
+}
+
+.inner-unordered-list {
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.inner-unordered-list > li {
+    padding-left: 10px;
+}
