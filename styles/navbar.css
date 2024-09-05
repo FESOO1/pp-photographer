@@ -1,3 +1,9 @@
+/* BODY OVERFLOW */
+
+.body-js {
+    overflow: hidden;
+}
+
 /* NAVBAR */
 
 nav {
