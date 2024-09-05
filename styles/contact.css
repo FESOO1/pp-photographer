@@ -39,6 +39,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding-inline: 50px;
 }
 
 .main-header-text-itself {
@@ -46,6 +47,11 @@
     color: white;
     font-size: 9.5rem;
     font-weight: 200;
+    text-align: center;
+}
+
+.click-away-divider {
+    display: none;
 }
 
 /* CONTACT */
@@ -74,7 +80,7 @@
 /* CONTACT WAYS */
 
 .contact-ways {
-    width: 55%;
+    width: 835px;
     display: flex;
     flex-direction: column;
     row-gap: 70px;
@@ -138,7 +144,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: rgb(18, 18, 18);
-    column-gap: 8px;
+    gap: 8px;
     padding: 8px;
     border-radius: 0.8rem;
 }
@@ -280,4 +286,93 @@ label {
 .form-text-itself {
     transform: translateY(1px);
     text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .main-header-text-itself {
+        font-size: 7.5rem;
+    }
+    .contact-subheader {
+        font-size: 3rem;
+    }
+    .other-platforms {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-ways {
+        width: 80%;
+    }
+    .main-header-text-itself {
+        font-size: 5.5rem;
+    }
+    .contact {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 810px) {
+    .other-platforms {
+        grid-template-columns: 1fr;
+    }
+    .contact-ways {
+        width: 88%;
+    }
+    .main-header-text-itself {
+        font-size: 4rem;
+    }
+    .contact-subheader {
+        font-size: 2.5rem;
+    }
+    .email-and-phone {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+    .main-header {
+        padding: 15px 10px;
+    }
+    .contact {
+        row-gap: 50px;
+    }
+    .through-form-text > h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-ways {
+        width: 100%;
+        padding-inline: 20px;
+    }
+    .form-itself {
+        padding: 15px;
+    }
+    .click-away-divider {
+        display: unset;
+    }
+    .main-header {
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-header-text-itself {
+        font-size: 3rem;
+    }
+    .main-header-text {
+        padding-inline: 25px;
+    }
+    .contact-subheader {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .contact-ways {
+        padding-inline: 10px;
+    }
 }
