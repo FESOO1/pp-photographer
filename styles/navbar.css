@@ -3,8 +3,9 @@
 nav {
     position: fixed;
     top: 30px;
-    left: calc(50% - 48%);
-    width: 96%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 95%;
     transition: height 800ms;
     z-index: 999;
     mix-blend-mode: difference;
@@ -166,12 +167,19 @@ nav {
     transition-delay: 600ms;
 }
 
+/* MEDIA QEURIES */
+
+@media (max-width: 1200px) {
+    nav {
+        width: 94%;
+    }
+}
+
 @media (max-width: 810px) {
     nav {
         width: 94.5%;
         top: 20px;
         left: 50%;
-        transform: translate(-50%, 0%);
         height: 60px;
         background-color: rgba(10,10,10,0.8);
         backdrop-filter: blur(10px);

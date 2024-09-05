@@ -528,3 +528,61 @@
     opacity: 1;
     transition-delay: 100ms;
 }
+
+/* MEDIA QEURIES */
+
+@media (max-width: 1300px) {
+    .videos-container,
+    .photos-container,
+    .clients-container {
+        padding-inline: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-header-h1 {
+        font-size: 8.5rem;
+        line-height: 120px;
+    }
+    .main-header-text {
+        row-gap: 10px;
+    }
+    .subheader {
+        font-size: 3rem;
+    }
+    .about-me-info > p {
+        font-size: 1.1rem;
+    }
+    .videos-container,
+    .photos-container {
+        grid-template-columns: 1fr;
+    }
+    .video,
+    .photography-itself {
+        height: 600px;
+    }
+    .video-link-btn-text {
+        opacity: 1;
+    }
+    .video-link-btn-svg {
+        opacity: 1;
+        transform: none;
+    }
+
+    .clients-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .client {
+        height: 300px;
+    }
+    .client-text {
+        background-color: rgba(27, 27, 27,0.7);
+    }
+    .client-text-svg {
+        transform: none;
+    }
+    .client-text-itself {
+        transform: none;
+        opacity: 1;
+    }
+}

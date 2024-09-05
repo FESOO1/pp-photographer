@@ -23,3 +23,22 @@ for (let i = 0; i < video.length; i++) {
     });
 
 };
+
+
+function setAutoplay() {
+    const video = document.querySelectorAll('video');
+
+    for (const videos of video) {
+        if (window.innerWidth < 1200) {
+            videos.setAttribute('autoplay', '');
+            videos.play();
+        } else {
+            videos.removeAttribute('autoplay');
+            videos.pause(); 
+        };
+    };
+};
+
+setAutoplay();
+
+window.addEventListener('resize', setAutoplay);
