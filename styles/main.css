@@ -677,6 +677,14 @@
     .video-text-year {
         font-size: 1.2rem;
     }
+    .about-me-video {
+        margin-top: 40px;
+    }
+    .videos,
+    .photography,
+    .clients {
+        row-gap: 40px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -700,5 +708,35 @@
     }
     .subheader {
         font-size: 2rem;
+    }
+    .video,
+    .photography-itself,
+    .about-me-video {
+        height: 230px;
+    }
+    .client {
+        height: 200px;
+    }
+    .video-text-left-title,
+    .photography-text-left-title {
+        font-size: 1.3rem;
+    }
+    .video-text-left-type,
+    .photography-text-left-type {
+        font-size: 1rem;
+    }
+    .photography-text-year,
+    .video-text-year {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .videos-container,
+    .photos-container,
+    .clients-container,
+    .about-me {
+        padding-inline: 12px;
+        row-gap: 12px;
     }
 }
