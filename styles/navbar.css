@@ -168,12 +168,13 @@ nav {
 
 @media (max-width: 810px) {
     nav {
-        width: 95%;
-        left: calc(50% - 47.5%);
+        width: 94.5%;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0%);
         height: 60px;
         background-color: rgba(10,10,10,0.8);
         backdrop-filter: blur(10px);
-        top: 20px;
         padding-inline: 20px;
         border-radius: 0.8rem;
         overflow: hidden;
@@ -190,5 +191,41 @@ nav {
     }
     .navbar-bottom {
         display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        width: 93.5%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        width: 92.5%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        width: 91%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        width: 89%;
+    }
+}
+
+@media (max-width: 350px) {
+    nav {
+        width: 87.5%;
+    }
+}
+
+@media (max-width: 300px) {
+    nav {
+        width: 86%;
     }
 }
