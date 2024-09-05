@@ -568,7 +568,6 @@
         opacity: 1;
         transform: none;
     }
-
     .clients-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -584,5 +583,60 @@
     .client-text-itself {
         transform: none;
         opacity: 1;
+    }
+    .about-me {
+        padding-inline: 80px;
+    }
+    .about-me-video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .client {
+        height: 220px;
+    }
+    .video,
+    .photography-itself,
+    .about-me-video {
+        height: 500px;
+    }
+}
+
+@media (max-width: 810px) {
+    .videos-container,
+    .photos-container,
+    .clients-container,
+    .about-me {
+        padding-inline: 20px;
+    }
+    .main-header-h1 {
+        font-size: 5rem;
+        line-height: 80px;
+    }
+    .main-header-paragraph {
+        width: 100%;
+        line-height: 30px;
+    }
+    .main-header-text {
+        padding-inline: 40px;
+    }
+    .subheader {
+        font-size: 2.5rem;
+    }
+    .about-me-info > p {
+        font-size: 1rem;
+        width: 95%;
+    }
+    .clients-container {
+        grid-template-columns: 1fr;
+    }
+    .client {
+        height: 350px;
+    }
+    .video,
+    .photography-itself,
+    .about-me-video {
+        height: 450px;
     }
 }
