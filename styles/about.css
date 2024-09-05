@@ -119,7 +119,7 @@
     border-radius: 0.8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 7px;
+    gap: 7px;
 }
 
 .statistics {
@@ -205,4 +205,27 @@
     font-family: 'Satoshi-Light';
     font-weight: 500;
     font-size: 1.15rem;
+}
+
+/* MEDIA QEURIES */
+
+@media (max-width: 1200px) {
+    .main-header-text-itself {
+        font-size: 7.5rem;
+    }
+    .about-me-subheader,
+    .my-services-subheader {
+        font-size: 3rem;
+    }
+    .about-me-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-me-picture,
+    .about-me-statistics,
+    .services-grid {
+        width: 90%;
+    }
 }
