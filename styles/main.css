@@ -699,6 +699,9 @@
 }
 
 @media (max-width: 400px) {
+    .photography-itself {
+        padding: 6px;
+    }
     .main-header-text {
         padding-inline: 20px;
     }
@@ -738,5 +741,9 @@
     .about-me {
         padding-inline: 12px;
         row-gap: 12px;
+    }
+    .photography-text-link,
+    .video-text-link {
+        padding: 15px;
     }
 }
