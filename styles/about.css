@@ -286,16 +286,7 @@
     }
 }
 
-/* @media (max-width: 600px) {
-    .main-header {
-        padding: 15px 10px;
-    }
-} */
-
 @media (max-width: 550px) {
-    /* .main-header {
-        padding: 15px 7px;
-    } */
     .text-itself-divider {
         display: unset;
     }
