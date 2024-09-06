@@ -295,6 +295,12 @@
 
 /* MEDIA QEURIES */
 
+@media (max-width: 1300px) {
+    .video-info-h1 {
+        font-size: 8rem;
+    }
+}
+
 @media (max-width: 1200px) {
     .video-info-h1 {
         font-size: 7.5rem;
