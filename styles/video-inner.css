@@ -352,6 +352,7 @@
         font-size: 2.5rem;
     }
     .video-more-info {
+        width: 80%;
         grid-template-columns: 1fr;
         padding: 6px;
         gap: 6px;
@@ -371,9 +372,6 @@
         padding-block: 80px 150px;
         row-gap: 40px;
     }
-    .video-more-info {
-        width: 80%;
-    }
 }
 
 @media (max-width: 600px) {
@@ -386,6 +384,7 @@
     }
     .paragraph {
         padding-inline: 20px;
+        font-size: 1.1rem;
     }
 }
 
@@ -442,10 +441,12 @@
     .video {
         height: 220px;
     }
-    .main-header-text {
-        font-size: 3rem;
-    }
     .video-more-info {
         width: 100%;
+    }
+    .paragraph {
+        font-size: 1rem;
+        line-height: 24px;
+        padding-inline: 0;
     }
 }

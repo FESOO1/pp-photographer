@@ -27,6 +27,7 @@
     font-size: 9.5rem;
     font-weight: 200;
     line-height: 180px;
+    text-align: center;
 }
 
 .paragraph {
@@ -46,7 +47,7 @@
     border-radius: 0.8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 8px;
+    gap: 8px;
 }
 
 .photo-more-info-inner {
@@ -301,4 +302,190 @@
 .direct-btn-svg {
     stroke: white;
     transition: transform 600ms;
+}
+
+/* MEDIA QEURIES */
+
+@media (max-width: 1300px) {
+    .photo-info-h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .photo-info-h1 {
+        font-size: 7.5rem;
+    }
+    .photo-info {
+        row-gap: 40px;
+    }
+    .photo-more-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photo-inner {
+        width: 100%;
+        padding-inline: 80px;
+    }
+    .photos-container {
+        grid-template-columns: 1fr;
+        padding-inline: 80px;
+    }
+    .photography-itself {
+        height: 500px;
+    }
+    .photography-link-btn-text {
+        opacity: 1;
+    }
+    .photography-link-btn-svg {
+        transform: none;
+        opacity: 1;
+    }
+    .more-photos-text-itself {
+        font-size: 3rem;
+    }
+    .photo-gallery-inner-two {
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
+    }
+    .photo-gallery-inner-two-one,
+    .photo-gallery-inner-two-two {
+        height: 650px;
+        object-position: top;
+    }
+}
+
+@media (max-width: 900px) {
+    .photo-info-h1 {
+        font-size: 5.5rem;
+    }
+    .paragraph {
+        width: 100%;
+    }
+}
+
+@media (max-width: 810px) {
+    .photo-info-h1 {
+        font-size: 4rem;
+        line-height: 70px;
+    }
+    .video-photos-text-itself {
+        font-size: 2.5rem;
+    }
+    .photo-more-info {
+        width: 80%;
+        grid-template-columns: 1fr;
+        padding: 6px;
+        gap: 6px;
+    }
+    .photo-inner,
+    .photos-container {
+        padding-inline: 20px;
+    }
+    .photo-gallery-inner {
+        padding: 0;
+        height: 450px;
+    }
+    .photography-itself,
+    .photo-gallery-inner-two-one,
+    .photo-gallery-inner-two-two {
+        height: 450px;
+    }
+    .photo-gallery-inner-two {
+        padding: 0;
+        background-color: transparent;
+    }
+    .more-photos {
+        padding-block: 80px 150px;
+        row-gap: 40px;
+    }
+    .photography-itself {
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .photo-gallery-inner,
+    .photography-itself,
+    .photo-gallery-inner-two-one,
+    .photo-gallery-inner-two-two {
+        height: 350px;
+    }
+    .photo-inner {
+        row-gap: 50px;
+    }
+    .paragraph {
+        padding-inline: 20px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .photo-gallery-inner,
+    .photography-itself,
+    .photo-gallery-inner-two-one,
+    .photo-gallery-inner-two-two {
+        height: 270px;
+    }
+    .photos-container {
+        gap: 10px;
+        padding-inline: 10px;
+    }
+    .photo-inner {
+        padding-inline: 10px;
+    }
+    .photo {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .photo-info-h1 {
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .photo-info-h1 {
+        font-size: 3rem;
+    }
+    .more-photos-text-itself {
+        font-size: 2rem;
+    }
+    .photography-text-left-title {
+        font-size: 1.3rem;
+    }
+    .photography-text-left-type {
+        font-size: 1rem;
+    }
+    .photography-text-year {
+        font-size: 1.1rem;
+    }
+    .photography-text-left {
+        row-gap: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .photography-text-link {
+        padding: 15px;
+    }
+    .photo-gallery-inner,
+    .photography-itself,
+    .photo-gallery-inner-two-one,
+    .photo-gallery-inner-two-two {
+        height: 220px;
+    }
+    .main-header-text {
+        font-size: 3rem;
+    }
+    .photo-more-info {
+        width: 100%;
+    }
+    .paragraph {
+        font-size: 1rem;
+        line-height: 24px;
+        padding-inline: 0;
+    }
 }

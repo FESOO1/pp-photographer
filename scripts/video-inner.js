@@ -12,7 +12,7 @@ for (let i = 0; i < video.length; i++) {
     });
 };
 
-// 
+// MAKING THE VIDEOS AUTOPLAY WHEN THE SCREEN SIZE IS SMALLER THAN 1200px
 
 function setAutoPlay() {
     const videos = document.querySelectorAll('video');
