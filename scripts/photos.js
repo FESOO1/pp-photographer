@@ -70,3 +70,16 @@ for (let i = 0; i < photo.length; i++) {
         customCursor.style.opacity = '0';
     });
 };
+
+/* REMOVING THE CUSTOM CURSOR WHEN THE SCREEN SIZE IS SMALLER THAN 1200px */
+
+function removeCursor() {
+    if (window.innerWidth < 1200) {
+        customCursor.remove();
+        return
+    };
+};
+
+removeCursor();
+
+window.addEventListener('resize', removeCursor);
