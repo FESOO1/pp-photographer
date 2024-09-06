@@ -25,7 +25,7 @@ for (let i = 0; i < video.length; i++) {
 };
 
 
-function setAutoplay() {
+/* function setAutoplay() {
     const video = document.querySelectorAll('video');
 
     for (const videos of video) {
@@ -41,4 +41,4 @@ function setAutoplay() {
 
 setAutoplay();
 
-window.addEventListener('resize', setAutoplay);
+window.addEventListener('resize', setAutoplay); */
