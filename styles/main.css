@@ -102,6 +102,7 @@
     border-radius: 1rem;
     background-color: rgba(35, 35, 35, 0.5);
     padding: 6.5px;
+    z-index: 55;
 }
 
 .about-me-video > video {
@@ -121,6 +122,7 @@
     text-decoration: none;
     column-gap: 5px;
     position: relative;
+    z-index: 1;
 }
 
 .direct-btn::before {
@@ -529,6 +531,7 @@
     opacity: 1;
     transition-delay: 100ms;
 }
+
 
 /* MEDIA QEURIES */
 
