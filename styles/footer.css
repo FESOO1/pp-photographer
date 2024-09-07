@@ -127,11 +127,15 @@ footer {
     .footer-contact-links {
         border-top: 1px solid rgba(255, 255, 255, 0.05);
         width: 95%;
-        padding-inline: 50px;
         flex-direction: column;
         align-items: center;
-        row-gap: 30px;
+        row-gap: 8px;
         padding-top: 20px;
+    }
+    .footer-contact-link {
+        width: 100%;
+        padding-block: 10px;
+        text-align: center;
     }
     .footer-contact-lets-talk-text {
         font-size: 6.5rem;
@@ -139,12 +143,14 @@ footer {
     }
     .footer-contact {
         row-gap: 25px;
+        width: 100%;
     }
     .footer-contact {
         padding-block: 40px 30px;
     }
     footer {
         margin-top: 40px;
+        padding-inline: 20px;
     }
 }
 
@@ -154,9 +160,6 @@ footer {
     }
     .footer-contact {
         width: 100%;
-    }
-    footer {
-        padding-inline: 20px;
     }
 }
 

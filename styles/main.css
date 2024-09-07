@@ -648,6 +648,9 @@
     .about-me-video {
         height: 350px;
     }
+    .photography-itself {
+        padding: 0;
+    }
     .client {
         height: 250px;
     }
@@ -699,9 +702,6 @@
 }
 
 @media (max-width: 400px) {
-    .photography-itself {
-        padding: 6px;
-    }
     .main-header-text {
         padding-inline: 20px;
     }
